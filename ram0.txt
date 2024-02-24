@@ -1,0 +1,54 @@
+Object  file ram0.o at $0000: Z80RMF12
+  Name: RAM0
+  Section bss_compiler: 0 bytes
+  Section IGNORE: 0 bytes
+  Section code_crt_init: 0 bytes
+  Section code_compiler: 0 bytes
+  Section BANK_00: 5282 bytes
+  Symbols:
+    G A $10AE _lineSPAN2 (section BANK_00) (file ram0.c:2618)
+    G A $0F19 _line_SPAN (section BANK_00) (file ram0.c:2377)
+    G A $0A2F _lineCircle2 (section BANK_00) (file ram0.c:1731)
+    G A $0741 _line3 (section BANK_00) (file ram0.c:1341)
+    G A $045E _lineCircle1 (section BANK_00) (file ram0.c:919)
+    G A $02D0 _line1 (section BANK_00) (file ram0.c:684)
+    G A $0162 _circle (section BANK_00) (file ram0.c:472)
+    G A $0137 _mikeCOS (section BANK_00) (file ram0.c:441)
+    G A $0000 _mikeSIN (section BANK_00) (file ram0.c:280)
+    G A $13C1 _buffer_plotX (section BANK_00) (file plot.asm:2)
+    G A $13C2 _buffer_plotY (section BANK_00) (file plot.asm:6)
+    G A $13C3 _buffer_plot_charX (section BANK_00) (file plot.asm:11)
+    G A $13C4 _buffer_plot_charY (section BANK_00) (file plot.asm:15)
+    G A $13C5 _screen_addy (section BANK_00) (file plot.asm:19)
+    G A $13CF _buffer_plot (section BANK_00) (file plot.asm:29)
+    G A $13EB _calculate_char_X_space1 (section BANK_00) (file plot.asm:68)
+    G A $13F9 _buffer_address_calculation3 (section BANK_00) (file plot.asm:94)
+    G A $1418 _buffer_unplot (section BANK_00) (file plot.asm:151)
+    G A $1434 _Variable_in_RAM0 (section BANK_00) (file ram0Z.asm:31)
+    G A $143D _gfx_xy (section BANK_00) (file ram0Z.asm:38)
+    G A $143F _gfx_x (section BANK_00) (file ram0Z.asm:42)
+    G A $1440 _gfx_y (section BANK_00) (file ram0Z.asm:46)
+    G A $1441 _set_attributes (section BANK_00) (file ram0Z.asm:54)
+    G A $1450 _rtunes_pixel (section BANK_00) (file ram0Z.asm:67)
+    G A $147B _rtunes_pixel2 (section BANK_00) (file ram0Z.asm:120)
+  Externs:
+    U         __moduint_callee
+    U         ___fs2sint_callee
+    U         ___fs2uchar_callee
+    U         ___fsadd_callee
+    U         ___fsdiv_callee
+    U         ___fsgt_callee
+    U         ___fslt_callee
+    U         ___fsmul_callee
+    U         ___fssub_callee
+    U         ___sint2fs_callee
+    U         ___uchar2fs_callee
+    U         ___uint2fs_callee
+    U         _lineAngle
+    U         _lineLength
+    U         _circleSize
+    U         _temp2
+    U         _temp1
+    U         _radians
+    U         _screenCenterY
+    U         _screenCenterX

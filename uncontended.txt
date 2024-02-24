@@ -1,0 +1,133 @@
+Object  file uncontended.o at $0000: Z80RMF12
+  Name: uncontended
+  Section bss_compiler: 61 bytes
+  Section IGNORE: 0 bytes
+  Section code_crt_init: 0 bytes
+  Section code_compiler: 1736 bytes
+  Section rodata_compiler: 633 bytes
+  Section data_compiler: 34 bytes
+  Section IM2_VECTOR_PLACEMENT: 325 bytes
+  Section code_user: 224 bytes
+  Section rodata_user: 1 bytes
+  Section smc_user: 0 bytes
+  Section data_user: 0 bytes
+  Section bss_user: 1 bytes
+  Symbols:
+    G A $05BA _main (section code_compiler) (file uncontended.c:2032)
+    G A $04E5 _Keypress (section code_compiler) (file uncontended.c:1916)
+    G A $04A7 _press_X (section code_compiler) (file uncontended.c:1871)
+    G A $0469 _press_Z (section code_compiler) (file uncontended.c:1826)
+    G A $042B _press_H (section code_compiler) (file uncontended.c:1781)
+    G A $03ED _press_G (section code_compiler) (file uncontended.c:1736)
+    G A $03AF _press_F (section code_compiler) (file uncontended.c:1691)
+    G A $0371 _press_D (section code_compiler) (file uncontended.c:1646)
+    G A $0333 _press_S (section code_compiler) (file uncontended.c:1601)
+    G A $02F2 _press_A (section code_compiler) (file uncontended.c:1555)
+    G A $0296 _press_E (section code_compiler) (file uncontended.c:1477)
+    G A $0246 _press_W (section code_compiler) (file uncontended.c:1410)
+    G A $01F6 _press_Q (section code_compiler) (file uncontended.c:1343)
+    G A $01E9 _slomo2 (section code_compiler) (file uncontended.c:1327)
+    G A $01DC _slomo (section code_compiler) (file uncontended.c:1311)
+    G A $018F _power (section code_compiler) (file uncontended.c:1268)
+    G A $0153 _use_random_number_generator (section code_compiler) (file uncontended.c:1229)
+    G A $0131 _plot (section code_compiler) (file uncontended.c:1206)
+    G A $00FA _rtunes_plot (section code_compiler) (file uncontended.c:1174)
+    G A $00C4 _rtunes_pixelRoutine (section code_compiler) (file uncontended.c:1137)
+    G A $006E _wrap (section code_compiler) (file uncontended.c:1090)
+    G A $0047 _radian2degree2 (section code_compiler) (file uncontended.c:1060)
+    G A $0023 _degree2radian2 (section code_compiler) (file uncontended.c:1031)
+    G A $0000 _dummyWait (section code_compiler) (file uncontended.c:996)
+    G A $001E _floatInput (section data_compiler) (file uncontended.c:2283)
+    G A $001A _squareRoot (section data_compiler) (file uncontended.c:2281)
+    G A $0018 _degrees (section data_compiler) (file uncontended.c:2279)
+    G A $0014 _radians (section data_compiler) (file uncontended.c:2277)
+    G A $0013 _f (section data_compiler) (file uncontended.c:2275)
+    G A $0012 _dy (section data_compiler) (file uncontended.c:2273)
+    G A $0011 _dx (section data_compiler) (file uncontended.c:2271)
+    G A $000F _lineAngle (section data_compiler) (file uncontended.c:2269)
+    G A $000E _lineLength (section data_compiler) (file uncontended.c:2267)
+    G A $000D _circleSize (section data_compiler) (file uncontended.c:2265)
+    G A $000B _y (section data_compiler) (file uncontended.c:2263)
+    G A $0009 _x (section data_compiler) (file uncontended.c:2261)
+    G A $0008 _yy (section data_compiler) (file uncontended.c:2259)
+    G A $0007 _xx (section data_compiler) (file uncontended.c:2257)
+    G A $0006 _direction (section data_compiler) (file uncontended.c:2255)
+    G A $0005 _ava (section data_compiler) (file uncontended.c:2253)
+    G A $0003 _eve (section data_compiler) (file uncontended.c:2251)
+    G A $0002 _harry (section data_compiler) (file uncontended.c:2249)
+    G A $0001 _dick (section data_compiler) (file uncontended.c:2247)
+    G A $0000 _tom (section data_compiler) (file uncontended.c:2245)
+    G A $0039 _i (section bss_compiler) (file uncontended.c:924)
+    G A $0038 _y2 (section bss_compiler) (file uncontended.c:922)
+    G A $0037 _x2 (section bss_compiler) (file uncontended.c:920)
+    G A $0036 _y1 (section bss_compiler) (file uncontended.c:918)
+    G A $0035 _x1 (section bss_compiler) (file uncontended.c:916)
+    G A $0033 _temp5 (section bss_compiler) (file uncontended.c:914)
+    G A $002F _bob (section bss_compiler) (file uncontended.c:912)
+    G A $002D _incrNE (section bss_compiler) (file uncontended.c:910)
+    G A $002B _incrE (section bss_compiler) (file uncontended.c:908)
+    G A $002A _y_coordinate (section bss_compiler) (file uncontended.c:906)
+    G A $0029 _x_coordinate (section bss_compiler) (file uncontended.c:904)
+    G A $0028 _temp (section bss_compiler) (file uncontended.c:902)
+    G A $0026 _temp4 (section bss_compiler) (file uncontended.c:900)
+    G A $0024 _temp3 (section bss_compiler) (file uncontended.c:898)
+    G A $0022 _temp2 (section bss_compiler) (file uncontended.c:896)
+    G A $0020 _temp1 (section bss_compiler) (file uncontended.c:894)
+    G A $0000 _string (section bss_compiler) (file uncontended.c:892)
+    G A $0002 _screenCenterY (section rodata_compiler) (file uncontended.c:1025)
+    G A $0000 _screenCenterX (section rodata_compiler) (file uncontended.c:1023)
+    G A $0000 _IM2_PUSH_POP (section IM2_VECTOR_PLACEMENT) (file im2.asm:29)
+    G A $0022 _SETUP_IM2 (section IM2_VECTOR_PLACEMENT) (file im2.asm:68)
+    G A $0043 _IM2_VECTOR (section IM2_VECTOR_PLACEMENT) (file im2.asm:110)
+    G A $0000 _keypress (section code_user) (file keyboard.asm:14)
+    G A $0002 _Read_Controls (section code_user) (file keyboard.asm:23)
+    G A $005A _random_number_16 (section code_user) (file random.asm:7)
+    G A $005C _xorshift_prng (section code_user) (file random.asm:12)
+    G A $007C _border_Change_IM2 (section code_user) (file uncontended.asm:21)
+    G A $0089 _border_Change_uncontended (section code_user) (file uncontended.asm:32)
+    G A $008D _character_address (section code_user) (file uncontended.asm:42)
+    G A $008F _attribute_color (section code_user) (file uncontended.asm:45)
+    G A $0090 _attribute_address (section code_user) (file uncontended.asm:55)
+    G A $0092 _attribute_width (section code_user) (file uncontended.asm:60)
+    G A $0093 _attribute_height (section code_user) (file uncontended.asm:62)
+    G A $0094 _pixel_address (section code_user) (file uncontended.asm:65)
+    G A $0096 _pixel_position (section code_user) (file uncontended.asm:67)
+    G A $0097 _character_X (section code_user) (file uncontended.asm:70)
+    G A $0098 _character_Y (section code_user) (file uncontended.asm:72)
+    G A $0099 _attribute_Box (section code_user) (file uncontended.asm:76)
+    G A $00C3 _Get_Attribute_Address (section code_user) (file uncontended.asm:134)
+    G A $0000 _xyzzy2 (section rodata_user) (file uncontended.asm:167)
+    G A $0000 _ada (section bss_user) (file uncontended.asm:184)
+  Externs:
+    U         __moduint_callee
+    U         ___fs2sint_callee
+    U         ___fs2uchar_callee
+    U         ___fs2uint_callee
+    U         ___fsadd_callee
+    U         ___fsdiv_callee
+    U         ___fsmul_callee
+    U         ___fssub_callee
+    U         ___sint2fs_callee
+    U         _set_attributes
+    U         _lineSPAN2
+    U         _line_SPAN
+    U         _lineCircle2
+    U         _line3
+    U         _lineCircle1
+    U         _line1
+    U         _circle
+    U         _rtunes_pixel
+    U         _floor_fastcall
+    U         _in_wait_nokey
+    U         _in_wait_key
+    U         _in_key_pressed_fastcall
+    U         _atof_fastcall
+    U         _scanf
+    U         _printf
+    U         _zx_pxy2saddr_callee
+    U         _zx_px2bitmask_fastcall
+    U         _zx_cls_fastcall
+    U         _zx_border_fastcall
+    U         _gfx_y
+    U         _gfx_x
+    U         _gfx_xy

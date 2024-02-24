@@ -1,0 +1,46 @@
+https://web.archive.org/web/20160429193518/http://forum.devmaster.net/t/fast-and-accurate-sine-cosine/9648?page=2
+
+https://github.com/g-truc/glm/blob/master/glm/gtx/fast_trigonometry.inl
+
+https://github.com/g-truc/glm/blob/master/glm/gtx/fast_trigonometry.inl
+
+
+
+
+
+
+
+
+
+inline float fast(float x)
+{
+// This has a better looking and same performance in release mode than the following code. However, in debug mode it's slower.
+// return 1.0f + x * (1.0f + x * 0.5f * (1.0f + x * 0.3333333333f * (1.0f + x * 0.25 * (1.0f + x * 0.2f))));
+float x2 = x * x;
+float x3 = x2 * x;
+float x4 = x3 * x;
+float x5 = x4 * x;
+return 1.0f + x + (x2 * 0.5f) + (x3 * 0.1666666667f) + (x4 * 0.041666667f) + (x5 * 0.008333333333f);
+}
+
+
+
+inline float fastAsin(float x)
+{
+return x + (x * x * x * 0.166666667f) + (x * x * x * x * x * 0.075f) + (x * x * x * x * x * x * x * 0.0446428571f) + (x * x * x * x * x * x * x * x * x * 0.0303819444f);// + (x * x * x * x * x * x * x * x * x * x * x * 0.022372159f);
+}
+
+inline float fastAcos(float x)
+{
+return 1.5707963267948966192313216916398f - glm::fastAsinGTX(x); //(PI / 2)
+}
+
+inline float fastAtan(float x)
+{
+return x - (x * x * x * 0.333333333333f) + (x * x * x * x * x * 0.2f) - (x * x * x * x * x * x * x * 0.1428571429f) + (x * x * x * x * x * x * x * x * x * 0.111111111111f) - (x * x * x * x * x * x * x * x * x * x * x * 0.0909090909f);
+}
+
+inline float fastTan(float x)
+{
+return x + (x * x * x * 0.3333333333f) + (x * x * x * x * x * 0.1333333333333f) + (x * x * x * x * x * x * x * 0.0539682539f);
+}
