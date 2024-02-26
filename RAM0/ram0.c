@@ -31,7 +31,8 @@ __endasm;
 # define M_PIx2          M_PI + M_PI
 # define degree2radian(degrees) ((degrees) * M_PI / 180.0)  //#define degree2radian(a) (a * 0.0174
 # define radian2degree(radians) ((radians) * 180.0 / M_PI)  //#define radian2degree(a) (a * 57.2957)
-# define ABS(N) ((N<0)?(-N):(N))
+//# define ABS(N) ((N<0)?(-N):(N))
+#define ABS(N) (((N) < 0) ? (-N) : (N))
 
 #include "externs.h"
 #include "variables.h"
@@ -41,6 +42,8 @@ __endasm;
 
 #include "math_sine.c"
 #include "math_cosine.c"
+
+#include "bresenham.c"
 
 #include "routines.c"
 
