@@ -88,6 +88,8 @@ void main ()
         printf ("Z-Line Span using SIN/COS");
         printf ("\n");
         printf ("X-Line Span using Bresenham");
+        printf ("\n");
+        printf ("M-Span using Bresenham outside");
 
         Keypress();
     }

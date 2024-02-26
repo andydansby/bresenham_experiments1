@@ -119,6 +119,9 @@ extern void circle (void) __z88dk_fastcall;
 extern void line1 (void) __z88dk_fastcall;
 extern void lineCircle1 (void) __z88dk_fastcall;
 extern void line3 (void) __z88dk_fastcall;
+extern void bresen_short (void) __z88dk_fastcall;
+
+
 extern void lineCircle2 (void) __z88dk_fastcall;
 
 extern void line_SPAN (void) __z88dk_fastcall;

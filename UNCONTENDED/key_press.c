@@ -15,17 +15,21 @@ void slomo2 (void)
 }
 
 
+
+
+void wipescreen (void)
+{
+    zx_cls(PAPER_BLUE | INK_YELLOW);
+    zx_border (3);
+    set_attributes();
+    in_wait_nokey();
+}
+
 void press_Q (void)
 {
-    zx_cls(PAPER_WHITE | INK_BLUE);
-    zx_border (2);
-
-    in_wait_nokey();
+    wipescreen ();
 
     printf("\x16\x01\x02");
-
-
-
     printf ("Enter Radius \n");
     scanf("%s", &string);
     circleSize = atof(string);
@@ -37,10 +41,7 @@ void press_Q (void)
 
 void press_W (void)
 {
-    zx_cls(PAPER_WHITE | INK_BLUE);
-    zx_border (2);
-
-    in_wait_nokey();
+    wipescreen ();
 
     printf("\x16\x01\x02");
 
@@ -55,10 +56,7 @@ void press_W (void)
 
 void press_E (void)
 {
-    zx_cls(PAPER_WHITE | INK_BLUE);
-    zx_border (2);
-
-    in_wait_nokey();
+    wipescreen ();
 
     printf("\x16\x01\x02");
 
@@ -74,12 +72,7 @@ void press_E (void)
 
 void press_A (void)
 {
-    zx_cls(PAPER_WHITE | INK_BLUE);
-    zx_border (2);
-
-    set_attributes();
-
-    in_wait_nokey();
+    wipescreen ();
 
     //buffer_plotX = screenCenterX;
     //buffer_plotY = screenCenterY;
@@ -89,7 +82,6 @@ void press_A (void)
     rtunes_pixel();
 
     slomo2 ();
-    slomo2 ();
 
     printf("\x16\x01\x02");
     printf ("Press a Key");
@@ -98,16 +90,8 @@ void press_A (void)
 
 void press_S (void)
 {
-    zx_cls(PAPER_WHITE | INK_BLUE);
-    zx_border (2);
+    wipescreen ();
 
-    set_attributes();
-
-    in_wait_nokey();
-
-    //buffer_plotX = screenCenterX;
-    //buffer_plotY = screenCenterY;
-    //buffer_plot();
     gfx_x = screenCenterX;
     gfx_y = screenCenterY;
     circle();
@@ -121,16 +105,8 @@ void press_S (void)
 
 void press_D (void)
 {
-    zx_cls(PAPER_WHITE | INK_BLUE);
-    zx_border (2);
+    wipescreen ();
 
-    set_attributes();
-
-    in_wait_nokey();
-
-    //buffer_plotX = screenCenterX;
-    //buffer_plotY = screenCenterY;
-    //buffer_plot();
     gfx_x = screenCenterX;
     gfx_y = screenCenterY;
     line1();
@@ -142,19 +118,10 @@ void press_D (void)
     in_wait_key ();
 }
 
-
 void press_F (void)
 {
-    zx_cls(PAPER_WHITE | INK_BLUE);
-    zx_border (2);
+    wipescreen ();
 
-    set_attributes();
-
-    in_wait_nokey();
-
-    //buffer_plotX = screenCenterX;
-    //buffer_plotY = screenCenterY;
-    //buffer_plot();
     gfx_x = screenCenterX;
     gfx_y = screenCenterY;
     lineCircle1();
@@ -168,16 +135,8 @@ void press_F (void)
 
 void press_G (void)
 {
-    zx_cls(PAPER_WHITE | INK_BLUE);
-    zx_border (2);
+    wipescreen ();
 
-    set_attributes();
-
-    in_wait_nokey();
-
-    //buffer_plotX = screenCenterX;
-    //buffer_plotY = screenCenterY;
-    //buffer_plot();
     gfx_x = screenCenterX;
     gfx_y = screenCenterY;
     line3();
@@ -191,16 +150,8 @@ void press_G (void)
 
 void press_H (void)
 {
-    zx_cls(PAPER_WHITE | INK_BLUE);
-    zx_border (2);
+    wipescreen ();
 
-    set_attributes();
-
-    in_wait_nokey();
-
-    //buffer_plotX = screenCenterX;
-    //buffer_plotY = screenCenterY;
-    //buffer_plot();
     gfx_x = screenCenterX;
     gfx_y = screenCenterY;
     lineCircle2();
@@ -214,16 +165,8 @@ void press_H (void)
 
 void press_Z (void)
 {
-    zx_cls(PAPER_WHITE | INK_BLUE);
-    zx_border (2);
+    wipescreen ();
 
-    set_attributes();
-
-    in_wait_nokey();
-
-    //buffer_plotX = screenCenterX;
-    //buffer_plotY = screenCenterY;
-    //buffer_plot();
     gfx_x = screenCenterX;
     gfx_y = screenCenterY;
     line_SPAN();
@@ -237,16 +180,8 @@ void press_Z (void)
 
 void press_X (void)
 {
-    zx_cls(PAPER_WHITE | INK_BLUE);
-    zx_border (2);
+    wipescreen ();
 
-    set_attributes();
-
-    in_wait_nokey();
-
-    //buffer_plotX = screenCenterX;
-    //buffer_plotY = screenCenterY;
-    //buffer_plot();
     gfx_x = screenCenterX;
     gfx_y = screenCenterY;
 
@@ -259,7 +194,21 @@ void press_X (void)
     in_wait_key ();
 }
 
+void press_M (void)
+{
+    wipescreen ();
 
+    //gfx_x = screenCenterX;
+    //gfx_y = screenCenterY;
+
+    bresen_circleSpan();
+
+    slomo2 ();
+
+    printf("\x16\x01\x02");
+    printf ("Press a Key");
+    in_wait_key ();
+}
 
 
 
@@ -338,6 +287,17 @@ void Keypress (void)
 		    slomo ();
 			break;
 		}
+
+		if (in_key_pressed( IN_KEY_SCANCODE_m ))    //draw line using sin/cos
+		{
+		    press_M();
+		    slomo ();
+			break;
+		}
+
+
+
+
 
     }
 }
